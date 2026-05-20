@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>La Fenice Immobiliare Cinque Terre — Dashboard</title>
+    <meta
+      name="description"
+      content="Dashboard di gestione del feed Instagram di La Fenice Immobiliare Cinque Terre."
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      crossorigin
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">LF</div>
+        <div class="brand-text">
+          <strong>La Fenice</strong>
+          <span>Immobiliare · Cinque Terre</span>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a class="nav-item active" href="#"
+          ><span class="nav-icon">▦</span> Dashboard</a
+        >
+        <a class="nav-item" href="#"><span class="nav-icon">▣</span> Feed</a>
+        <a class="nav-item" href="#"
+          ><span class="nav-icon">◔</span> Programmazione</a
+        >
+        <a class="nav-item" href="#"
+          ><span class="nav-icon">◑</span> Analisi</a
+        >
+        <a class="nav-item" href="#"
+          ><span class="nav-icon">◇</span> Immobili</a
+        >
+        <a class="nav-item" href="#"
+          ><span class="nav-icon">⚙</span> Impostazioni</a
+        >
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="sync-status">
+          <span class="dot live"></span>
+          <div>
+            <strong>Sincronizzato</strong>
+            <span>oggi alle 06:02</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Panoramica</p>
+          <h1>Buongiorno, La Fenice</h1>
+        </div>
+        <div class="topbar-actions">
+          <div class="search">
+            <input
+              type="search"
+              placeholder="Cerca post, immobili, didascalie…"
+              aria-label="Cerca"
+            />
+          </div>
+          <button class="btn btn-ghost" type="button">Esporta</button>
+          <button class="btn btn-primary" type="button">
+            <span>＋</span> Nuovo post
+          </button>
+        </div>
+      </header>
+
+      <section class="kpis">
+        <article class="kpi">
+          <p class="kpi-label">Follower</p>
+          <p class="kpi-value">4.812</p>
+          <p class="kpi-trend up">▲ 2,3% questa settimana</p>
+        </article>
+        <article class="kpi">
+          <p class="kpi-label">Post totali</p>
+          <p class="kpi-value">387</p>
+          <p class="kpi-trend up">▲ 4 negli ultimi 7 giorni</p>
+        </article>
+        <article class="kpi">
+          <p class="kpi-label">Engagement medio</p>
+          <p class="kpi-value">6,8%</p>
+          <p class="kpi-trend up">▲ 0,9 pt vs mese scorso</p>
+        </article>
+        <article class="kpi">
+          <p class="kpi-label">Impression (30g)</p>
+          <p class="kpi-value">128k</p>
+          <p class="kpi-trend down">▼ 1,2% vs mese scorso</p>
+        </article>
+      </section>
+
+      <section class="grid-2">
+        <article class="card chart-card">
+          <header class="card-header">
+            <div>
+              <h2>Engagement nel tempo</h2>
+              <p class="card-sub">Ultimi 14 giorni</p>
+            </div>
+            <div class="chip-group" role="tablist">
+              <button class="chip" type="button">7g</button>
+              <button class="chip active" type="button">14g</button>
+              <button class="chip" type="button">30g</button>
+            </div>
+          </header>
+          <div class="chart">
+            <svg viewBox="0 0 600 220" preserveAspectRatio="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="grad" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#c97e5a" stop-opacity="0.32" />
+                  <stop offset="100%" stop-color="#c97e5a" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+              <g class="grid">
+                <line x1="0" x2="600" y1="40" y2="40" />
+                <line x1="0" x2="600" y1="90" y2="90" />
+                <line x1="0" x2="600" y1="140" y2="140" />
+                <line x1="0" x2="600" y1="190" y2="190" />
+              </g>
+              <path
+                d="M0,160 L43,140 L86,150 L129,110 L172,125 L215,95 L258,80 L300,100 L343,70 L386,90 L429,55 L472,75 L515,45 L558,60 L600,40"
+                fill="none"
+                stroke="#c97e5a"
+                stroke-width="2.5"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M0,160 L43,140 L86,150 L129,110 L172,125 L215,95 L258,80 L300,100 L343,70 L386,90 L429,55 L472,75 L515,45 L558,60 L600,40 L600,220 L0,220 Z"
+                fill="url(#grad)"
+              />
+            </svg>
+            <ul class="chart-x">
+              <li>6 mag</li>
+              <li>9 mag</li>
+              <li>12 mag</li>
+              <li>15 mag</li>
+              <li>18 mag</li>
+              <li>oggi</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card top-posts">
+          <header class="card-header">
+            <div>
+              <h2>Post più performanti</h2>
+              <p class="card-sub">Ultimi 30 giorni</p>
+            </div>
+            <a class="link" href="#">Vedi tutti →</a>
+          </header>
+          <ol class="rank-list">
+            <li>
+              <span class="rank">01</span>
+              <div class="rank-thumb thumb-1"></div>
+              <div class="rank-body">
+                <p class="rank-title">Vista mare a Vernazza</p>
+                <p class="rank-meta">428 ♥ · 36 💬 · 18 mag</p>
+              </div>
+              <span class="rank-score">9,1%</span>
+            </li>
+            <li>
+              <span class="rank">02</span>
+              <div class="rank-thumb thumb-2"></div>
+              <div class="rank-body">
+                <p class="rank-title">Terrazza Monterosso</p>
+                <p class="rank-meta">312 ♥ · 27 💬 · 14 mag</p>
+              </div>
+              <span class="rank-score">7,8%</span>
+            </li>
+            <li>
+              <span class="rank">03</span>
+              <div class="rank-thumb thumb-3"></div>
+              <div class="rank-body">
+                <p class="rank-title">Borgo storico Manarola</p>
+                <p class="rank-meta">298 ♥ · 22 💬 · 11 mag</p>
+              </div>
+              <span class="rank-score">7,2%</span>
+            </li>
+            <li>
+              <span class="rank">04</span>
+              <div class="rank-thumb thumb-4"></div>
+              <div class="rank-body">
+                <p class="rank-title">Casa con giardino · Corniglia</p>
+                <p class="rank-meta">241 ♥ · 19 💬 · 7 mag</p>
+              </div>
+              <span class="rank-score">6,4%</span>
+            </li>
+          </ol>
+        </article>
+      </section>
+
+      <section class="card feed-section">
+        <header class="card-header">
+          <div>
+            <h2>Feed Instagram</h2>
+            <p class="card-sub">
+              @lafeniceimmobiliarecinqueterre · aggiornato automaticamente ogni giorno
+            </p>
+          </div>
+          <div class="header-actions">
+            <div class="chip-group">
+              <button class="chip active" type="button">Tutti</button>
+              <button class="chip" type="button">Foto</button>
+              <button class="chip" type="button">Video</button>
+              <button class="chip" type="button">Caroselli</button>
+            </div>
+            <button class="btn btn-ghost" type="button">⟳ Aggiorna</button>
+          </div>
+        </header>
+
+        <div class="feed-grid">
+          <article class="post">
+            <a class="media" href="#">
+              <div class="media-img m1"></div>
+              <span class="badge">Foto</span>
+            </a>
+            <div class="post-body">
+              <p class="post-caption">
+                Una vista che toglie il fiato 🌅 Vernazza al tramonto, da una delle nostre
+                terrazze esclusive.
+              </p>
+              <div class="post-meta">
+                <span>18 mag</span>
+                <span>♥ 428 · 💬 36</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post">
+            <a class="media" href="#">
+              <div class="media-img m2"></div>
+              <span class="badge badge-video">Video</span>
+            </a>
+            <div class="post-body">
+              <p class="post-caption">
+                Tour completo di una villa con piscina vista mare a Monterosso. Disponibile in
+                affitto stagionale.
+              </p>
+              <div class="post-meta">
+                <span>14 mag</span>
+                <span>♥ 312 · 💬 27</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post">
+            <a class="media" href="#">
+              <div class="media-img m3"></div>
+              <span class="badge">Carosello</span>
+            </a>
+            <div class="post-body">
+              <p class="post-caption">
+                Manarola autentica: appartamento ristrutturato nel cuore del borgo storico.
+              </p>
+              <div class="post-meta">
+                <span>11 mag</span>
+                <span>♥ 298 · 💬 22</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post">
+            <a class="media" href="#">
+              <div class="media-img m4"></div>
+              <span class="badge">Foto</span>
+            </a>
+            <div class="post-body">
+              <p class="post-caption">
+                Casa con giardino a Corniglia · 3 camere · vista vigneti.
+              </p>
+              <div class="post-meta">
+                <span>7 mag</span>
+                <span>♥ 241 · 💬 19</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post">
+            <a class="media" href="#">
+              <div class="media-img m5"></div>
+              <span class="badge badge-video">Video</span>
+            </a>
+            <div class="post-body">
+              <p class="post-caption">
+                Riomaggiore dall'alto. Drone reel di una delle nostre proprietà più richieste.
+              </p>
+              <div class="post-meta">
+                <span>4 mag</span>
+                <span>♥ 217 · 💬 14</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post">
+            <a class="media" href="#">
+              <div class="media-img m6"></div>
+              <span class="badge">Foto</span>
+            </a>
+            <div class="post-body">
+              <p class="post-caption">
+                Dettagli di un'antica casa ligure: archi in pietra, soffitti a volta.
+              </p>
+              <div class="post-meta">
+                <span>1 mag</span>
+                <span>♥ 184 · 💬 11</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post">
+            <a class="media" href="#">
+              <div class="media-img m7"></div>
+              <span class="badge">Carosello</span>
+            </a>
+            <div class="post-body">
+              <p class="post-caption">
+                Open house questo weekend a Levanto. Scrivici in DM per fissare la visita.
+              </p>
+              <div class="post-meta">
+                <span>28 apr</span>
+                <span>♥ 152 · 💬 9</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post">
+            <a class="media" href="#">
+              <div class="media-img m8"></div>
+              <span class="badge">Foto</span>
+            </a>
+            <div class="post-body">
+              <p class="post-caption">
+                I colori delle Cinque Terre raccontati nelle facciate dei nostri immobili.
+              </p>
+              <div class="post-meta">
+                <span>24 apr</span>
+                <span>♥ 139 · 💬 8</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="grid-2">
+        <article class="card schedule">
+          <header class="card-header">
+            <div>
+              <h2>Prossimi post in programma</h2>
+              <p class="card-sub">Maggio 2026</p>
+            </div>
+            <a class="link" href="#">Calendario completo →</a>
+          </header>
+          <ul class="schedule-list">
+            <li>
+              <div class="day">
+                <span class="d">22</span><span class="m">mag</span>
+              </div>
+              <div class="schedule-body">
+                <p class="schedule-title">Reel · Vista panoramica Vernazza</p>
+                <p class="schedule-meta">09:30 · Reel · 24s</p>
+              </div>
+              <span class="status pending">In coda</span>
+            </li>
+            <li>
+              <div class="day">
+                <span class="d">24</span><span class="m">mag</span>
+              </div>
+              <div class="schedule-body">
+                <p class="schedule-title">Carosello · Nuova proprietà Manarola</p>
+                <p class="schedule-meta">18:00 · 6 immagini</p>
+              </div>
+              <span class="status ready">Pronto</span>
+            </li>
+            <li>
+              <div class="day">
+                <span class="d">27</span><span class="m">mag</span>
+              </div>
+              <div class="schedule-body">
+                <p class="schedule-title">Foto · Tramonto Monterosso</p>
+                <p class="schedule-meta">19:45 · Foto</p>
+              </div>
+              <span class="status draft">Bozza</span>
+            </li>
+          </ul>
+        </article>
+
+        <article class="card activity">
+          <header class="card-header">
+            <div>
+              <h2>Attività recente</h2>
+              <p class="card-sub">Sincronizzazione automatica</p>
+            </div>
+          </header>
+          <ul class="activity-list">
+            <li>
+              <span class="dot live"></span>
+              <div>
+                <p>Feed sincronizzato · 12 nuovi post indicizzati</p>
+                <time>oggi · 06:02</time>
+              </div>
+            </li>
+            <li>
+              <span class="dot info"></span>
+              <div>
+                <p>Token Instagram rinnovato automaticamente</p>
+                <time>ieri · 06:02</time>
+              </div>
+            </li>
+            <li>
+              <span class="dot warn"></span>
+              <div>
+                <p>Engagement reel "Vernazza" sopra la media (+38%)</p>
+                <time>18 mag · 21:14</time>
+              </div>
+            </li>
+            <li>
+              <span class="dot info"></span>
+              <div>
+                <p>Nuovo follower: 4.812 totali</p>
+                <time>18 mag · 14:02</time>
+              </div>
+            </li>
+            <li>
+              <span class="dot info"></span>
+              <div>
+                <p>Sito pubblicato su GitHub Pages</p>
+                <time>17 mag · 11:48</time>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
